@@ -1,0 +1,88 @@
+# Global
+.DS_Store
+Thumbs.db
+
+# Backup & Temp
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+.venv/
+venv/
+pip-log.txt
+pytest_cache/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.ctxt
+*.classpath
+*.project
+*.settings/
+target/
+bin/
+out/
+
+# C++
+*.exe
+*.out
+*.obj
+*.o
+*.gch
+*.pch
+*.log
+*.dll
+*.so
+*.a
+*.lib
+*.vcxproj.user
+*.vcxproj.filters
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Node.js / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+dist/
+build/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Test outputs
+test-output/
+junit-report.xml
+
+# OS files
+ehthumbs.db
+Icon?
+
+# Temp MS Wordfiles
+~*.*
