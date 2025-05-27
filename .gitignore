@@ -2,6 +2,12 @@
 .DS_Store
 Thumbs.db
 
+# Visual Studio Files
+.vs/
+*.pdb
+*.tlog
+x64/
+
 # Backup & Temp
 *.swp
 *.swo
