@@ -34,7 +34,7 @@ public class CacheManager
     
     public override string ToString()
     {
-    return $"CacheManager Instance HashCode: {GetHashCode()}";
+		return $"CacheManager Instance HashCode: {GetHashCode()}";
     }
 }
 
