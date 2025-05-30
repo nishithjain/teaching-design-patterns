@@ -1,4 +1,4 @@
-public class builder_p {
+public class Person {
     // Fields for the person object
     private final String name;
     private final int age;
@@ -6,14 +6,15 @@ public class builder_p {
     private final String phoneNumber;
     private final String email;
 
-// Private constructor, only accessible from Builder
-    private builder_p(Builder builder) {
+    // Private constructor, only accessible from Builder
+    private Person(Builder builder) {
         this.name = builder.name;
         this.age = builder.age;
         this.address = builder.address;
         this.phoneNumber = builder.phoneNumber;
         this.email = builder.email;
     }
+
     // Static inner Builder class
     public static class Builder {
         // Builder fields
@@ -22,7 +23,8 @@ public class builder_p {
         private String address;
         private String phoneNumber;
         private String email;
-    // Setter for name, returns Builder for chaining
+
+        // Setter for name, returns Builder for chaining
         public Builder setName(String name) {
             this.name = name;
             return this;
@@ -48,21 +50,23 @@ public class builder_p {
             return this;
         }
         // Build method to create the person object
-        public builder_p build() {
-            return new builder_p(this);
+        public Person build() {
+            return new Person(this);
         }
     }
+
     // toString method to display the person object
     public String toString() {
         return "Name= " + name + "\n" +
-                "Age= " + age +"\n"+
+                "Age= " + age + "\n" +
                 "Address= " + address + "\n" +
                 "PhoneNumber= " + phoneNumber + "\n" +
-                "Email= " + email + "\n" ;
+                "Email= " + email + "\n";
     }
+
     // Main method to demonstrate the Builder pattern
     public static void main(String[] args) {
-        builder_p person = new builder_p.Builder()
+        Person person = new Person.Builder()
                 .setName("Praful Jain P")
                 .setAge(19)
                 .setAddress("123 Main St")
@@ -70,6 +74,5 @@ public class builder_p {
                 .setEmail("praful@gmail.com")
                 .build();
         System.out.println(person);
-        
     }
 }
