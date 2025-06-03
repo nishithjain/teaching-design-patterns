@@ -1,3 +1,4 @@
+//Tree Prototype
 class Tree {
     constructor(name, heightInFeet, leafColor, isDicot, isNative) {
         this.name = name;
